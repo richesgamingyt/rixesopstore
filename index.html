@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>rixes op games</title>
+  <link rel="icon" type="image/png" href="https://ik.imagekit.io/q2ahuwvwn/IMG_20250529_083330_788.webp?updatedAt=1748597042498">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url(https://ik.imagekit.io/q2ahuwvwn/Screenshot%202025-04-27%20100029.png?updatedAt=1748597331572);
+      color: white;
+    }
+
+    #login-box {
+      background: black
+      padding: 30px 40px;
+      border-radius: 10px;
+      backdrop-filter: blur(6px);
+      text-align: :center;
+      animation: fadeIn 1s ease;
+    }
+
+    input {
+      padding: 12px;
+      width: 100%;
+      border: none;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 12px 25px;
+      background: #ffb434;
+      border: none;
+      border-radius: 6px;
+      color: rgb(246, 246, 246);
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #af6c01;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="login-box">
+    <h2>follow the insta page @riches_op</h2>
+    <input type="password" id="password" placeholder="use password to DOWNLOAD" />
+    <br />
+    <button onclick="checkPassword()">DOWNLOAD</button>
+  </div>
+
+  <script>
+    const correctPassword = "@riches_op"; // change this to your desired password
+    const targetURL = "https://gofile.io/d/BkbOhg"; // replace with your desired link
+
+    function checkPassword() {
+      const entered = document.getElementById("password").value;
+      if (entered === correctPassword) {
+        window.open(targetURL, "_blank");
+      } else {
+        alert("Incorrect password! Try again.");
+      }
+    }
+  </script>
+
+</body>
+</html>
