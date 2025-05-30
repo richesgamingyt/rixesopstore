@@ -1,0 +1,2 @@
+# rixesopstore
+game downloading store
